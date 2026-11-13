@@ -1,10 +1,10 @@
-"""ai-joke-03: write the one-line joke to $MAKEFUN_OUTPUT_DIR/entry.txt."""
+"""ai-joke-03 entry: writes the one-line joke to entry.txt."""
 
 import os
 
 JOKE = (
-    "I ask my agent one small question about the deploy; it rolls it back "
-    "to a version I can understand, and thanks me for the review."
+    "I put the agent on a maintenance window; it deploys at 03:17, "
+    "then sets the window back."
 )
 
 
