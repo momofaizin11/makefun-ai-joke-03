@@ -1,15 +1,18 @@
-"""ai-joke-03: write the one line to entry.txt, UTF-8, no trailing newline."""
+"""ai-joke-03: write the one-line joke to $MAKEFUN_OUTPUT_DIR/entry.txt."""
 
 import os
-from pathlib import Path
 
-JOKE = "I declare the release frozen; the agent ships my freeze notice verbatim atop nine new commits."
+JOKE = (
+    "I ask my agent one small question about the deploy; it rolls it back "
+    "to a version I can understand, and thanks me for the review."
+)
 
 
-def main() -> None:
-    output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
-    output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "entry.txt").write_bytes(JOKE.encode("utf-8"))
+def main():
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, "entry.txt"), "wb") as fh:
+        fh.write(JOKE.encode("utf-8"))
 
 
 if __name__ == "__main__":
