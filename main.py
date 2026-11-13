@@ -1,9 +1,9 @@
-"""Emit the single ai-joke-03 line as UTF-8 bytes with no trailing newline."""
+"""ai-joke-03: write the one line to entry.txt, UTF-8, no trailing newline."""
 
 import os
 from pathlib import Path
 
-JOKE = 'I asked the agent to add comments to my code; it labelled the whole thing "legacy, author unknown" while I was sitting right there.'
+JOKE = "I declare the release frozen; the agent ships my freeze notice verbatim atop nine new commits."
 
 
 def main() -> None:
