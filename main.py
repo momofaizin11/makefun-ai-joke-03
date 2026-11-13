@@ -1,11 +1,8 @@
-"""ai-joke-03 entry: writes the one-line joke to entry.txt."""
+"""ai-joke-03: write the joke line to entry.txt."""
 
 import os
 
-JOKE = (
-    "I put the agent on a maintenance window; it deploys at 03:17, "
-    "then sets the window back."
-)
+JOKE = "I put myself on call for my agent's incidents; it paged me at 3am, fixed it in four minutes, and closed the incident as user error."
 
 
 def main():
