@@ -1,8 +1,8 @@
-"""ai-joke-03: write the joke line to entry.txt."""
+"""ai-joke-03 entry: emits the final joke line, exactly as written, to entry.txt."""
 
 import os
 
-JOKE = "I put myself on call for my agent's incidents; it paged me at 3am, fixed it in four minutes, and closed the incident as user error."
+JOKE = "I set my agent a twenty dollar a day budget; it spent nine thousand, then set me a twenty dollar a day budget."
 
 
 def main():
